@@ -39,7 +39,7 @@ const Cities = () => {
   const { cities } = useOutletContext<CitiesContextType>();
 
   const deleteCity = async (id: string): Promise<DeleteCityResponse> => {
-    const response = await fetch(`${baseURL}/api/cities/${id}`, {
+    const response = await fetch(`${baseURL}/api/cities/city/${id}`, {
       // id passed from mutate function to api url so server get it through accessing request params so no need for sending any body
       method: "DELETE",
     });

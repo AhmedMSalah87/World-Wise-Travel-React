@@ -68,7 +68,7 @@ const Form = () => {
   });
   // function to add city to database afer submit
   const addCity = async (newCity: NewCity): Promise<CityResponse> => {
-    const response = await fetch(`${baseURL}/api/cities/city`, {
+    const response = await fetch(`${baseURL}/api/cities/cities`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newCity),
