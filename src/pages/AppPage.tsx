@@ -11,9 +11,7 @@ const AppPage = () => {
   const { userId } = useAuth();
 
   const fetchCities = async () => {
-    const response = await fetch(
-      `${baseURL}/api/users/cities?userId=${userId}`
-    );
+    const response = await fetch(`${baseURL}/api/cities?userId=${userId}`);
     if (!response.ok) {
       throw new Error("Failed to fetch cities");
     }
