@@ -30,7 +30,7 @@ export const signupSchema = z.object({
 
 type signupForm = z.infer<typeof signupSchema>;
 
-const baseURL = import.meta.env.BASE_URL;
+const baseURL = import.meta.env.VITE_BASE_URL;
 
 const SignupPage = () => {
   const { isSignedIn, isLoaded: isAuthLoaded, userId } = useAuth();

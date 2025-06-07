@@ -20,7 +20,7 @@ const formatDate = (date: Date) =>
     weekday: "long",
   }).format(new Date(date));
 
-const baseURL = import.meta.env.BASE_URL;
+const baseURL = import.meta.env.VITE_BASE_URL;
 
 const CityInfo = () => {
   const { id } = useParams(); // id type is string

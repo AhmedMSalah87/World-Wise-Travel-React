@@ -39,7 +39,7 @@ type CityResponse = {
   addedCity: NewCity;
 };
 
-const baseURL = import.meta.env.BASE_URL;
+const baseURL = import.meta.env.VITE_BASE_URL;
 
 const Form = () => {
   const { userId } = useAuth();

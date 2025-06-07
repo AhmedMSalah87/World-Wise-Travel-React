@@ -29,7 +29,7 @@ export const loginSchema = z.object({
 
 type loginForm = z.infer<typeof loginSchema>;
 
-const baseURL = import.meta.env.BASE_URL;
+const baseURL = import.meta.env.VITE_BASE_URL;
 
 const LoginPage = () => {
   const { isSignedIn, isLoaded: isAuthLoaded } = useAuth();

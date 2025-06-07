@@ -5,7 +5,7 @@ import { useAuth } from "@clerk/clerk-react";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "@/components/Loading";
 
-const baseURL = import.meta.env.BASE_URL;
+const baseURL = import.meta.env.VITE_BASE_URL;
 
 const AppPage = () => {
   const { userId } = useAuth();

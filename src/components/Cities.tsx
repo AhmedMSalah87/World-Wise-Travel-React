@@ -33,7 +33,7 @@ type DeleteCityResponse = {
   message: string; // optional server message
 };
 
-const baseURL = import.meta.env.BASE_URL;
+const baseURL = import.meta.env.VITE_BASE_URL;
 
 const Cities = () => {
   const { cities } = useOutletContext<CitiesContextType>();
