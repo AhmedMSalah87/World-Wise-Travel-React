@@ -2,17 +2,17 @@ import { lazy, Suspense } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Loading from "./components/Loading";
+import Cities from "@/components/Cities";
+import CityInfo from "@/components/CityInfo";
+import SearchCities from "@/components/SearchCities";
+import Form from "@/components/Form";
+import ProtectedRoute from "./components/ProtectedRoute";
 const ProductPage = lazy(() => import("@/pages/ProductPage"));
 const PricingPage = lazy(() => import("@/pages/PricingPage"));
 const HomePage = lazy(() => import("@/pages/HomePage"));
 const LoginPage = lazy(() => import("@/pages/LoginPage"));
 const SignupPage = lazy(() => import("@/pages/SignupPage"));
 const AppPage = lazy(() => import("@/pages/AppPage"));
-const Cities = lazy(() => import("@/components/Cities"));
-const CityInfo = lazy(() => import("@/components/CityInfo"));
-const SearchCities = lazy(() => import("@/components/SearchCities"));
-const Form = lazy(() => import("@/components/Form"));
-import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
